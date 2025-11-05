@@ -1,5 +1,7 @@
 **💼 Hired – Full Stack Job Portal**
 
+**[live demo : https://elevare-jobs.vercel.app/] **
+
 🚀 A next-gen hiring platform connecting recruiters and candidates in real-time  
 
 
