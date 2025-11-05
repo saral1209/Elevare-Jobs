@@ -1,17 +1,29 @@
-💼 Hired – Full Stack Job Portal
+**💼 Hired – Full Stack Job Portal**
+
 🚀 A next-gen hiring platform connecting recruiters and candidates in real-time  
 
-🌟 About the Project
+
+**🌟 About the Project**
+
 Hired is a full-stack web application that bridges the gap between recruiters and candidates through a modern, responsive platform.
+
 It allows recruiters to post and manage jobs, while candidates can explore, apply, and track applications — all within a seamless interface built for speed and scalability.
 
-💡 Problem It Solves
+
+**💡 Problem It Solves**
+
 Job seekers can easily browse, filter, and apply for jobs, while tracking their application statuses.
+
 Recruiters can post new openings, manage applicants, and maintain company profiles effortlessly.
 
-👥 Who It’s For
-Job Seekers / Candidates – Professionals looking for a clean, modern interface to explore and apply for opportunities with transparency and ease.
-Recruiters / Hiring Managers – Companies or startups seeking an efficient way to manage postings, attract candidates, and track applications.
+
+**👥 Who It’s For**
+
+**Job Seekers / Candidates** – Professionals looking for a clean, modern interface to explore and apply for opportunities with transparency and ease.
+
+**Recruiters / Hiring Managers** – Companies or startups seeking an efficient way to manage postings, attract candidates, and track applications.
+
+------
 
 ⚙️ Tech Stack Overview
 
@@ -169,7 +181,7 @@ This project is continuously evolving — below are some planned improvements an
 
 ---
 
-🌟 1. Enhanced User Profiles
+**🌟 1. Enhanced User Profiles**
 
 Candidate Resumes & Portfolios: Upload multiple resumes, add GitHub/LinkedIn links, or host personal portfolio pages.
 
@@ -178,10 +190,7 @@ Recruiter Profiles: Include company “About Us” sections, employee testimonia
 Skill Badges & Endorsements: Gamified badges or endorsements for verified skills.
 
 
-
----
-
-🚀 2. Smarter Job Listings
+**🚀 2. Smarter Job Listings**
 
 AI-Powered Recommendations: Suggest jobs based on candidate behavior, skills, and history.
 
@@ -192,10 +201,7 @@ Rich Text Job Editor: Markdown or WYSIWYG support for detailed job descriptions.
 Auto Expiry & Archiving: Automatically close outdated job listings.
 
 
-
----
-
-💼 3. Advanced Application Management
+**💼 3. Advanced Application Management**
 
 Application Timeline: Visual tracker (Applied → Reviewing → Interview → Offer → Rejected).
 
@@ -204,10 +210,7 @@ In-App Messaging: Direct and secure recruiter–candidate chat.
 Candidate Analytics Dashboard: View stats like application performance and interview rate.
 
 
-
----
-
-🔍 4. Improved Search & Discovery
+**🔍 4. Improved Search & Discovery**
 
 Advanced Filters: Salary, experience, location, and job type filters.
 
@@ -216,10 +219,7 @@ Fuzzy Search: Handle typos and partial matches.
 Geo-Based Search: “Jobs within X km of Y location” for local job discovery.
 
 
-
----
-
-🎨 5. User Experience & UI Refinements
+**🎨 5. User Experience & UI Refinements**
 
 Light/Dark Mode Toggle: Let users switch between themes.
 
@@ -230,30 +230,20 @@ Guided Onboarding: Step-by-step onboarding experience for new users.
 Push Notifications: Real-time updates for new jobs or application status changes.
 
 
-
----
-
-💰 6. Monetization & Business Model
+**💰 6. Monetization & Business Model**
 
 Premium Recruiter Plans: Paid plans for visibility, analytics, and access to top candidates.
 
 Candidate Subscriptions: Premium perks like resume reviews or exclusive listings.
 
 
-
----
-
-⚙️ 7. Technical Enhancements
+**⚙️ 7. Technical Enhancements**
 
 Server-Side Rendering (SSR) / SSG: Improve SEO and performance for public pages.
 
 Optimistic UI Updates: Instant interactions that feel smooth and responsive.
 
 Centralized Error Logging: Implement tools like Sentry for production error monitoring and debugging.
-
-
-
----
 
 ✅ Goal:
 To make this job portal not just functional, but intelligent, scalable, and user-centric — bridging the gap between job seekers and recruiters in the most seamless way possible.
