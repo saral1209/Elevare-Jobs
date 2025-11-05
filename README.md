@@ -55,3 +55,31 @@ This project is built to reflect real-world functionality, combining modern full
 | 🏙️ **Company Management** | Add or select companies when posting jobs to maintain structured data. |
 | 👀 **Applicant Management** | View all candidates who have applied and update their status throughout the hiring process. |
 | 🗑️ **Job Management** | Edit or delete job postings to keep listings updated. |
+
+## 🧠 System Architecture / Project Overview
+
+This full-stack job portal follows a **modular, scalable, and secure architecture** built on React.js, Supabase, and Clerk.  
+It ensures smooth integration between the frontend, authentication, and backend layers for a seamless user experience.
+
+| 🧩 **Layer** | ⚙️ **Technology / Tool** | 💡 **Purpose / Functionality** |
+|:-------------|:--------------------------|:-------------------------------|
+| 🎨 **Frontend** | React.js, Tailwind CSS, ShadCN UI | Builds a dynamic, responsive, and modern user interface. |
+| 🧭 **Routing & Forms** | React Router DOM, React Hook Form + Zod | Enables client-side navigation and schema-based form validation. |
+| 🔐 **Authentication** | Clerk | Handles secure user authentication (Google/email), session management, and JWT generation. |
+| 🗄️ **Backend & Database** | Supabase (PostgreSQL) | Manages job, user, and application data with Row Level Security (RLS). |
+| 🪣 **File Storage** | Supabase Storage | Stores resumes and company logos securely. |
+| 🔄 **Integration (Clerk + Supabase)** | JWT Validation | Clerk issues JWTs, Supabase validates them for secure API access. |
+| ⚙️ **Build & Dev Tools** | Vite, ESLint, PostCSS | Fast builds, code linting, and optimized CSS processing. |
+| 🚀 **Deployment** | Vercel | Continuous deployment with global scalability and performance. |
+
+---
+
+### 🔄 **Communication Flow**
+
+1️⃣ User signs in via **Clerk** → receives secure JWT  
+2️⃣ **React frontend** sends API requests with JWT token  
+3️⃣ **Supabase** validates JWT → enforces **RLS**  
+4️⃣ Database & Storage operations occur securely  
+5️⃣ Response returned → **UI updates in real time**
+
+---
