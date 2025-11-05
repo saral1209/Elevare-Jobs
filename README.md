@@ -34,3 +34,24 @@ Recruiters / Hiring Managers – Companies or startups seeking an efficient way 
 | 🧰 **Development & Deployment Tools** | 💻 **VS Code** | Primary IDE with Tailwind IntelliSense and productivity-boosting extensions. |
 |  | 🌐 **GitHub** | Version control and collaboration for transparent, team-ready development. |
 |  | 🚀 **Vercel** | Continuous deployment platform delivering production-grade performance and reliability. |
+
+## ✨ Key Features
+
+This project is built to reflect real-world functionality, combining modern full-stack development practices with a smooth, user-first experience.
+
+| 👤 **User Features (Candidates)** | 💡 **Description** |
+|:----------------------------------|:-------------------|
+| 🔐 **Secure Authentication** | Sign up or log in with Google or email/password using Clerk. |
+| 🧭 **Job Search & Filtering** | Search and filter jobs by title, company, or location for quick discovery. |
+| 💾 **Job Wishlisting** | Save favourite job listings for later review. |
+| 📄 **Detailed Job View** | Access full job descriptions, application counts, and requirements in a structured layout. |
+| 📝 **Easy Job Application** | Apply seamlessly by submitting details and uploading resumes. |
+| 🔎 **Application Tracking** | Monitor job application statuses in real time (e.g., applied, interviewing). |
+
+| 🏢 **Recruiter Features** | 💡 **Description** |
+|:---------------------------|:-------------------|
+| 🧩 **Role-Based Access** | Distinct dashboards for recruiters and candidates. |
+| 🧾 **Job Posting System** | Create and manage new job listings with rich details and markdown-formatted descriptions. |
+| 🏙️ **Company Management** | Add or select companies when posting jobs to maintain structured data. |
+| 👀 **Applicant Management** | View all candidates who have applied and update their status throughout the hiring process. |
+| 🗑️ **Job Management** | Edit or delete job postings to keep listings updated. |
