@@ -83,3 +83,52 @@ It ensures smooth integration between the frontend, authentication, and backend 
 5️⃣ Response returned → **UI updates in real time**
 
 ---
+## 📂 Folder Structure
+
+A well-structured, scalable, and modular architecture that highlights clean separation of concerns between UI, logic, and configuration.
+
+| 📁 **Directory / File** | 💡 **Purpose / Description** |
+|:------------------------|:-----------------------------|
+| `public/` | Static assets like app logo, banner, and favicon. |
+| ├── `logo.png` | Brand logo for the application. |
+| └── `banner.jpeg` | Landing page banner image. |
+| `src/` | Main source folder containing all React components and logic. |
+| ├── `components/` | Reusable UI components (e.g., Header, Footer, JobCard). |
+| ├── `pages/` | Core pages such as Landing, JobListing, PostJob, MyJobs. |
+| ├── `layout/` | Application-wide wrappers (AppLayout, shared Header/Footer). |
+| ├── `utils/` | Utility functions and Supabase client setup. |
+| ├── `ui/` | Shadcn UI components customized for the app’s design. |
+| ├── `App.jsx` | Root React component defining routes and layouts. |
+| ├── `index.css` | Global styles with Tailwind utilities and custom themes. |
+| └── `main.jsx` | App entry point initializing Clerk and Theme Providers. |
+| `.env` | Environment variables (Supabase + Clerk API keys). |
+| `package.json` | Lists dependencies and scripts. |
+| `tailwind.config.js` | Tailwind CSS configuration and theme customization. |
+| `postcss.config.js` | PostCSS setup for CSS transformations. |
+| `jsconfig.json` | Configures alias paths and JavaScript compiler options. |
+
+---
+
+### 🧠 **Highlights**
+
+✅ Organized for scalability and collaboration  
+✅ Clear separation between UI, logic, and backend config  
+✅ Easily maintainable and extensible for future growth  
+
+---
+## ⚡ Installation & Setup Instructions
+
+Follow these steps to set up and run **Hired – Full Stack Job Portal** locally.
+
+| 🔢 **Step** | ⚙️ **Action** | 💡 **Details** |
+|:------------|:---------------|:----------------|
+| 🧰 **1️⃣ Prerequisites** | Install Node.js (v18+) and npm/yarn/pnpm | 👉 [Download Node.js](https://nodejs.org/) (npm comes bundled) <br> Create accounts on **[Supabase](https://supabase.com/)** and **[Clerk](https://clerk.com/)** for backend & authentication setup. |
+| 📦 **2️⃣ Install Dependencies** | Run the following command: | ```bash<br>npm install<br># or<br>yarn install<br># or<br>pnpm install``` <br> Installs React, Vite, Tailwind CSS, Supabase, Clerk, React Router, and ShadCN UI. |
+| 🔑 **3️⃣ Environment Variables** | Create `.env` in project root and add credentials | ```bash<br># Supabase<br>VITE_SUPABASE_URL="YOUR_SUPABASE_PROJECT_URL"<br>VITE_SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY"<br>VITE_SUPABASE_JWT_SECRET="YOUR_SUPABASE_JWT_SECRET"<br><br># Clerk<br>VITE_CLERK_PUBLISHABLE_KEY="YOUR_CLERK_PUBLISHABLE_KEY"``` |
+| 🧩 **4️⃣ Supabase Setup** | Create project & helper SQL function | In Supabase **Settings → API**, copy your Project URL, anon key, and JWT secret. <br> In SQL Editor, run: <br> ```sql<br>CREATE OR REPLACE FUNCTION public.auth_uid()<br>RETURNS uuid LANGUAGE plpgsql AS $$<br>BEGIN<br>  RETURN (current_setting('request.jwt.claims', true)::jsonb)->>'sub';<br>END;<br>$$;``` <br>✅ Enables Clerk → Supabase Row-Level Security (RLS) validation. |
+| 🔐 **5️⃣ Clerk Setup** | Configure authentication | In Clerk, create new app → choose Email + Google sign-in. <br> In **JWT Templates → New Template → Supabase**, paste your Supabase JWT secret into the **Signing Key**. <br> Copy your Publishable Key for `.env`. |
+| 🗃️ **6️⃣ Database Tables** | Create required tables in Supabase | - **profiles** → user details & roles (candidate/recruiter) <br> - **companies** → company info & logos <br> - **jobs** → job posts & requirements <br> - **applications** → candidate applications & status <br> 🔒 Enable Row-Level Security (RLS) for secure access. |
+| 🚀 **7️⃣ Run the App** | Start the local server | ```bash<br>npm run dev<br># or<br>yarn dev<br># or<br>pnpm dev``` <br> Visit **http://localhost:5173** to explore your app. |
+| 🎉 **Done!** | All set up! | Sign up as **candidate or recruiter**, post jobs, apply, and explore the full workflow. |
+
+✨ **Pro Tip:** Keep your `.env` keys private — never commit them to GitHub.
