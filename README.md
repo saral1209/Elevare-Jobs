@@ -2,7 +2,7 @@
 
 🚀 A next-gen hiring platform connecting recruiters and candidates in real-time  
 
-**[live demo : https://elevare-jobs.vercel.app/] **
+[live demo  : https://elevare-jobs.vercel.app/] 
 
 screenshots : 
 <img width="1362" height="647" alt="Hirred one" src="https://github.com/user-attachments/assets/4f4b2180-23a6-4cd0-ad8c-3753ad73e79f" />
